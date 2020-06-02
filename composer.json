@@ -1,0 +1,38 @@
+{
+  "name": "lamalama/laravel-breadcrumbs",
+  "description": "Create SEO proof breadcrumbs",
+  "keywords": ["laravel", "breadcrumbs"],
+  "type": "library",
+  "homepage": "https://github.com/lamalamaNL/laravel-breadcrumbs",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lamalamaMark",
+      "email": "mark@lamalama.nl"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "LamaLama\\Breadcrumbs\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LamaLama\\Breadcrumbs\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "LamaLama\\Breadcrumbs\\BreadcrumbsServiceProvider"
+        ],
+        "aliases": {
+            "Breadcrumbs": "LamaLama\\Breadcrumbs\\Facades\\Breadcrumbs"
+        }
+    }
+  }
+}
