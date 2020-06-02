@@ -30,6 +30,8 @@ You can use the custom ```@breadcrumbs``` blade directive
 @breadcrumbs
 ```
 
+Based on props given in the Controller the package generates SEO proof html containing microdata to support rich results.
+
 ```html
 <ol itemscope itemtype="https://schema.org/BreadcrumbList">
   <li itemprop="itemListElement" itemscope
