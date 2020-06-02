@@ -3,7 +3,6 @@
 namespace LamaLama\Breadcrumbs;
 
 use Illuminate\Support\ServiceProvider;
-use LamaLama\Breadcrumbs\Breadcrumbs;
 
 class BreadcrumbsServiceProvider extends ServiceProvider
 {
