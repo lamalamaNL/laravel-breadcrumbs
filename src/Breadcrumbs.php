@@ -43,7 +43,7 @@ class Breadcrumbs
 
     /**
      * generate.
-     * @param  boolean $minify
+     * @param  bool $minify
      * @return void
      */
     public static function generate($minify = false)
