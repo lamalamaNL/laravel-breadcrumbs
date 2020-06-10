@@ -2,12 +2,10 @@
 
 namespace LamaLama\Breadcrumbs;
 
-use Illuminate\Support\Facades\View;
-
 class Breadcrumbs
 {
     /**
-     * $html
+     * $html.
      * @var string
      */
     public $html = '';
