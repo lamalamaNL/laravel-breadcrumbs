@@ -24,10 +24,20 @@ php artisan vendor:publish --provider="LamaLama\Breadcrumbs\BreadcrumbsServicePr
 
 ## Use
 
-You can use the custom ```@breadcrumbs``` blade directive
+You can use the ```Breadcrumbs::setTrail()``` method to set the trail for the breadcrumbs of the specific page.
 
 ```php
-@breadcrumbs
+Breadcrumbs::trail([
+    'Properties' => '/properties',
+    'Amsterdam' => '/properties/amsterdam',
+    'Nieuwe Teertuinen 23' => '/properties/amsterdam/nieuwe-teertuinen-23'
+]);
+```
+
+You can use the ```Breadcrumbs::generate()``` method to render the html in your Blade templates.
+
+```php
+{!! Breadcrumbs::generate() !!}
 ```
 
 Based on props given in the Controller the package generates SEO proof html containing microdata to support rich results.
