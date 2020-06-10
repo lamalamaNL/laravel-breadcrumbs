@@ -24,7 +24,7 @@ php artisan vendor:publish --provider="LamaLama\Breadcrumbs\BreadcrumbsServicePr
 
 ## Use
 
-You can use the ```Breadcrumbs::setTrail()``` method to set the trail for the breadcrumbs of the specific page.
+You can use the ```Breadcrumbs::trail()``` method to set the trail for the breadcrumbs of the specific page.
 
 ```php
 Breadcrumbs::trail([
