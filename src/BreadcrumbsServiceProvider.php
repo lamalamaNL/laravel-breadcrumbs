@@ -27,7 +27,7 @@ class BreadcrumbsServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/breadcrumbs.php', 'breadcrumbs');
 
-        $this->app->bind('breadcrumbs', function () {
+        $this->app->singleton('breadcrumbs', function () {
             return new Breadcrumbs();
         });
     }
