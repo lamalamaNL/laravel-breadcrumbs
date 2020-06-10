@@ -28,9 +28,9 @@ You can use the ```Breadcrumbs::trail()``` method to set the trail for the bread
 
 ```php
 Breadcrumbs::trail([
-    'Properties' => '/properties',
-    'Amsterdam' => '/properties/amsterdam',
-    'Nieuwe Teertuinen 23' => '/properties/amsterdam/nieuwe-teertuinen-23'
+    'Work' => '/work',
+    'Commerce' => '/work/commerce',
+    'Sneaker District' => '/work/commerce/sneaker-district'
 ]);
 ```
 
