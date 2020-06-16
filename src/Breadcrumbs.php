@@ -44,12 +44,24 @@ class Breadcrumbs
     }
 
     /**
-     * generate.
+     * Check if Breadcrumbs exists.
      * @param  bool $minify
      * @return void
      */
-    public function generate($minify = false)
+    public function exists()
     {
-        return ($minify) ? str_replace(PHP_EOL, '', $this->html) : $this->html;
+        return (blank($this->html))
+            ? false
+            : true;
+    }
+
+    /**
+     * generate.
+     * @param  bool $showHome
+     * @return void
+     */
+    public function generate()
+    {
+        return $this->html;
     }
 }
