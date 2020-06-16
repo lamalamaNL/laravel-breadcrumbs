@@ -21,7 +21,7 @@ class Breadcrumbs
             return;
         }
 
-        $divider = '<svg class="w-3 h-3 mx-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg>';
+        $divider = '<li><svg class="w-3 h-3 mx-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M9 5l7 7-7 7"></path></svg></li>';
 
         $this->html = '<ol class="flex items-center text-gray-500" itemscope itemtype="https://schema.org/BreadcrumbList">';
 
