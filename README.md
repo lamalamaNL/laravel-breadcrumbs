@@ -40,6 +40,16 @@ You can use the ```Breadcrumbs::generate()``` method to render the html in your 
 {!! Breadcrumbs::generate() !!}
 ```
 
+You can check if breadcrumbs exists in order to render a specific partial on your page.
+
+```php
+@if(Breadcrumbs::exists())
+    <section>
+        {!! Breadcrumbs::generate(true) !!}
+    </section>
+@endif
+```
+
 Based on props given in the Controller the package generates SEO proof html containing microdata to support rich results.
 
 ```html
@@ -50,7 +60,7 @@ Based on props given in the Controller the package generates SEO proof html cont
         <span itemprop="name">Work</span></a>
     <meta itemprop="position" content="1" />
   </li>
-  ›
+  <li>›</li>
   <li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem">
     <a itemscope itemtype="https://schema.org/WebPage"
@@ -59,7 +69,7 @@ Based on props given in the Controller the package generates SEO proof html cont
       <span itemprop="name">Commerce</span></a>
     <meta itemprop="position" content="2" />
   </li>
-  ›
+  <li>›</li>
   <li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem">
     <span itemprop="name">Sneaker District</span>
