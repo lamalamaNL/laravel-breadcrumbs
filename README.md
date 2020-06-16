@@ -45,7 +45,7 @@ You can check if breadcrumbs exists in order to render a specific partial on you
 ```php
 @if(Breadcrumbs::exists())
     <section>
-        {!! Breadcrumbs::generate(true) !!}
+        {!! Breadcrumbs::generate() !!}
     </section>
 @endif
 ```
